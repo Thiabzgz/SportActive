@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <title>SportActive</title>
+</head>
+
+<body>
+  <i class="uil uil-angle-up up"></i>
+  <header>
+    <h2>SportActive</h2>
+    <ul>
+      <li><a href="#home" id="nav1">inicio </a></li>
+      <li><a href="#services" id="nav2">datos</a></li>
+      <li><a href="#skills" id="nav3">uso</a></li>
+      <li><a href="#contact" id="nav4">bloques</a></li>
+ 
+    </ul>
+    <i class="uil uil-bars menu"></i>
+  </header>
+  <section id="home">
+    <div class="left">
+      <span>Bienvenido a </span>
+      <h3>SportActive</h3>
+      <span class="des">
+        tu compañero de confianza en la búsqueda de un estilo de vida activo y saludable.
+      </span>
+      <button><a href="#skills">Conoce mas</a></button>
+    </div>
+    <div class="right">
+      <img src="lop.png">
+    </div>
+
+  </section>
+  <section id="services">
+    <h1 class="title">planeacion</h1>
+    <div class="cards">
+      <div class="card">
+        <div class="bgcard"></div>
+      
+        <h3>Analítica Avanzada</h3>
+        <p>Utiliza herramientas de análisis avanzadas para evaluar tu progreso con métricas detalladas</p>
+      </div>
+      <div class="card">
+        <div class="bgcard"></div>
+
+        <h3>Registro Detallado de Actividades</h3>
+        <p>Mantén un registro detallado de todas tus actividades físicas, incluyendo carreras, caminatas, sesiones de entrenamiento y más.</p>
+      </div>
+      <div class="card">
+        <div class="bgcard"></div>
+
+        <h3>Recordatorios de Entrenamiento</h3>
+        <p>Configura recordatorios personalizados para tus sesiones de entrenamiento..</p>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <section id="skills">
+    <h1 class="title">Como usarla</h1>
+    <div class="content">
+      <div class="skills">
+        <div class="skill">
+         
+        </div>
+        <img
+            src="t.jpg"
+            alt="Imagen 9"
+            width="40%"
+            height="40%"
+          />
+           <img
+            src="et.jpg"
+            alt="Imagen 9"
+            width="40%"
+            height="40%"
+          />
+      </div>
+      <div class="para">
+        <h3>vamos</h3>
+        <p> La app fue hecha simple, intuitiva y llamativa para el usuario con el fin de se más fácil de usar para el usuario</p>
+        <p> Se tienen cuatro paneles, velocidad, altura, distancia y tiempo, cada uno de ellos se guardarán para el registro</p>
+      </div>
+    </div>
+  </section>
+
+
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    /* Estilos para la sección "bloques" */
+    .bloques {
+      background-color: #000;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .ficha {
+      border: 1px solid #fff;
+      padding: 10px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    /* Estilo para la imagen dentro de la ficha */
+    .ficha img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Estilo para la imagen cuando se expande */
+    .ficha.expandida img {
+      transform: scale(1.2);
+    }
+
+  </style>
+</head>
+<body>
+
+  <section class="uso">
+    <!-- Contenido de la sección "uso" -->
+  </section>
+
+  <section class="nose">
+    <!-- Contenido de la sección "nose" -->
+  </section>
+
+  <!-- Nueva sección "bloques" -->
+  <section class="bloques">
+    <h2>Bloques</h2>
+    <div class="ficha" onclick="expandirFicha(this)">
+      <h3>pantalla de carga</h3>
+      <p>usa un cronometro de carga para realiza la pantalla </p>
+       <img
+            src="tu.jpg"
+            alt="Imagen 9"
+            width="50%"
+            height="50%"
+          />
+    </div>
+    <div class="ficha" onclick="expandirFicha(this)">
+      <h3>pantalla principal </h3>
+      <p>toma en cuenta la ubicación posiciones del usuario y tiempo para mostrar el resultado</p>
+       <img
+            src="ta.jpg"
+            alt="Imagen 9"
+            width="50%"
+            height="50%"
+          />
+    </div>
+    <!-- Agrega más fichas según sea necesario -->
+  </section>
+
+  <script>
+    function expandirFicha(ficha) {
+      ficha.classList.toggle('expandida');
+    }
+  </script>
+
+</body>
+</html>
